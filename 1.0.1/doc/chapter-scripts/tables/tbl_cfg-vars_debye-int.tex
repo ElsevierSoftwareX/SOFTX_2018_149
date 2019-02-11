@@ -1,0 +1,35 @@
+% This is part of the cp-tools manual.
+% Copyright (C) 2018 Tilo Zienert
+% See the main file doc-cp-tools.tex for copying conditions.
+%
+\begin{landscape}
+\begin{longtable}{p{4cm}p{5cm}p{2cm}p{8cm}}
+	\caption{Description of config variables used in \emph{debye-int.py}.}\label{tbl:cfg-vars_debye-int}\\
+	\textbf{name}	&\textbf{description}	&\textbf{type}	&\textbf{value/options}\\
+	\toprule
+	\endfirsthead
+
+	\multicolumn{4}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+	\toprule
+	\textbf{name}	&\textbf{description}	&\textbf{type}	&\textbf{value/options}\\
+	\toprule
+	\endhead
+
+	\hline \multicolumn{4}{|r|}{{Continued on next page}} \\ \hline
+	\endfoot
+
+	\toprule
+	\endlastfoot
+	
+	\multicolumn{4}{c}{\textbf{$\bm{c_p}$ Algorithm}}\\
+	\midrule
+	T	&Sets the start temperature for $c_V$ calculation.	&int	&Give a value in K.\\
+	\midrule
+	T\_end	&Sets the end temperature for $c_V$ calculation.	&int	&Give a value in K.\\
+	\midrule
+	TD	&Sets a Debye temperature that is used if no is given on the command line.	&int	&Give a value in K.\\
+	\midrule
+	savefile	&Sets the filename for saving the calculated values. The filename will be '\emph{savefile}-\emph{TD}'.	&string	&Give a name.\\
+	\bottomrule
+\end{longtable}
+\end{landscape}

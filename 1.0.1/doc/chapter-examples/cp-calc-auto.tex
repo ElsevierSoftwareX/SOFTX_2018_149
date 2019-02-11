@@ -1,0 +1,21 @@
+% This is part of the cp-tools manual.
+% Copyright (C) 2018 Tilo Zienert
+% See the main file doc-cp-tools.tex for copying conditions.
+%
+\section{cp-calc-auto.py}
+The script \emph{cp-calc-auto.py} calculates the thermophysical properties using the $c_p$-predicting algorithm for all substances given in the main config file. If needed, you can use parallel computing.\\
+
+\textbf{CALL}: \emph{python examples/cp-calc-auto.py}\\
+
+All necessary config variables are listed and descriped in table \ref{tbl:cfg-vars_cp-calc-auto}.
+%%
+\subsection{main config file}
+The input parameters for $c_p$ calculation must be given in the main config file defined by \emph{cfg\_dir}+\emph{cfg\_file} (see table \ref{tbl:cfg-vars_cp-calc-auto} for details). An example config file comes along with the software: 'cfg-cp-calc/data-cp-calc.cfg'.
+
+The parameters must be given as tab separated values in the following order: \textbf{name}, \textbf{V0} in $\unitfrac{cm^3}{mol}$, \textbf{B0} in GPa, \textbf{m} in $\unitfrac{GPa}{K}$, \textbf{Theta\_fit} in K, \textbf{Theta\_calc} in K, \textbf{E\_s} in $\unitfrac{KJ}{g}$, \textbf{alpha\_D} in \unitfrac{1e6}{K} and \textbf{T\_m} in K, where Theta\_fit is the calorimetric Debye temperature, Theta\_calc is the calculated Debye temperature based on elastic constants, E\_s is the specific energy, alpha\_D is the volumetric thermal expansion coefficient at $T=\Theta_\text{D}$ and T\_m is the melting temperature.
+%%
+\subsection{additional config files}
+For each substance defined by \emph{name} in the main config file, an additional config file '\emph{name}.cfg' can be created in the folder \emph{cfg\_dir}. In each line, an options can be given as '\emph{option}=value'. Possible options are listed in table \ref{tbl:cfg-vars_cp-calc-auto_additional}.
+%% inputs
+\input{chapter-examples/tables/tbl_cfg-vars_cp-calc-auto}
+\input{chapter-examples/tables/tbl_cfg-vars_cp-calc-auto_additional}

@@ -1,0 +1,12 @@
+% This is part of the cp-tools manual.
+% Copyright (C) 2018 Tilo Zienert
+% See the main file doc-cp-tools.tex for copying conditions.
+%
+\section{fit-TD-from-heat-capacity.py}
+The script \emph{fit-TD-from-heat-capacity.py} calculates the Debye temperature from a least-square fit of the Debye equation to experimental $c_p$ values.\\
+
+\textbf{CALL}: \emph{python scripts/fit-TD-from-heat-capacity.py DATAFILE}\\
+
+The DATAFILE must contain tab-separated values of $T$ and $c_p$. An example file can be found for silver in 'example-datafiles/data-Ag-cp-Furukawa1972.data'.
+
+The script will ask for the highest temperature that should be used for fitting. For best results, choose a temperature where $c_p\approx c_V$ is fulfilled. If your $c_p$ values are from a multiphase sample, you can also give the mole fraction of each additional phase and its Debye temperature. Press ENTER if you do not want to add a further phase for calculation.

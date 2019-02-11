@@ -1,0 +1,55 @@
+% This is part of the cp-tools manual.
+% Copyright (C) 2018 Tilo Zienert
+% See the main file doc-cp-tools.tex for copying conditions.
+%
+\begin{landscape}
+\begin{longtable}{p{4cm}p{5cm}p{2cm}p{8cm}}
+	\caption{Description of config variables used in \emph{cp-calc-auto.py}.}\label{tbl:cfg-vars_cp-calc-auto}\\
+	\textbf{name}	&\textbf{description}	&\textbf{type}	&\textbf{value/options}\\
+	\toprule
+	\endfirsthead
+
+	\multicolumn{4}{c}{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+	\toprule
+	\textbf{name}	&\textbf{description}	&\textbf{type}	&\textbf{value/options}\\
+	\toprule
+	\endhead
+
+	\hline \multicolumn{4}{|r|}{{Continued on next page}} \\ \hline
+	\endfoot
+
+	\toprule
+	\endlastfoot
+	
+	\multicolumn{4}{c}{\textbf{$\bm{c_p}$ Algorithm}}\\
+	\midrule
+	cp\_variant	&Sets how $\alpha_V$ at $T = \Theta_\text{D}$ is selected.	&string	&\textbf{\emph{free}}: $\alpha_V$ at $T = \Theta_\text{D}$ is taken from config file\\
+		&	&	&\textbf{\emph{prediction}}: calculates $\alpha_V$ at $T = \Theta_\text{D}$ from melting temperature.\\
+	\midrule
+	TD\_variant	&Sets which Debye temperature is taken.	&string	&\textbf{\emph{fit}}: use the calorimetric Debye temperature\\
+		&	&	&\textbf{\emph{calc}}: use the calculated Debye temperature based on elastic constants\\
+		&	&	&\textbf{\emph{prediction}}: estimate the Debye temperature using the \emph{specific energy}-relation\\
+	\midrule
+	\multicolumn{4}{c}{\textbf{Change of input parameters (for evaluation purpose)}}\\
+	\midrule
+	PCT\_vars	&Sets which input parameters should be changed by \emph{PCT\_percents}	&string list	&\textbf{\emph{alpha}}, \textbf{\emph{B0}}, \textbf{\emph{m}}, \textbf{\emph{V0}}, \textbf{\emph{TD}}\\
+		&	&	&standard: PCT\_vars=[] (no change of input parameters)\\
+	\midrule
+	PCT\_percents	&Sets how much the parameters in \emph{PCT\_vars} should be changed.	&float list	&values in \%\\
+	\midrule
+	\multicolumn{4}{c}{\textbf{Computational options}}\\
+	\midrule
+	CFG\_compute\_only\_new	&If a savefile already exist, should the calculation be redone?	&boolean	&\textbf{\emph{True}}, \textbf{\emph{False}}\\
+	\midrule
+	CFG\_n\_cpu	&Sets the number of CPUs used for parallel computing.	&int	&Give the number of CPUs you want to use.\\
+	\midrule
+	\multicolumn{4}{c}{\textbf{General saving options}}\\
+	\midrule
+	cfg\_dir	&Sets the folder where the config files can be found.	&string	&Folder name can be relative or absolute.\\
+	\midrule
+	cfg\_file	&Sets the name of the main config file.	&string	&The config file will be read as \emph{cfg\_dir}+\emph{cfg\_file}.\\
+	\midrule
+	file\_PREFIX	&Sets the folder where the results will be saved.	&string	&Folder name can be relative or absolute.\\
+	\bottomrule
+\end{longtable}
+\end{landscape}

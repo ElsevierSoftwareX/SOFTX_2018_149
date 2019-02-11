@@ -1,0 +1,47 @@
+#   Copyright 2017 Tilo Zienert
+#
+#   This file is part of cp-tools.
+#
+#   cp-tools is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   cp-tools is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with cp-tools.  If not, see <http://www.gnu.org/licenses/>.
+#
+###############
+#
+# data Ag from Wern2004
+#	M(Ag)=107.87 g/mol
+#
+# T[K]	V_m[cm^3/mol]	B[GPa]
+0.0	10.144832126398947	108.7
+10.0	10.144832126398947	108.7
+25.0	10.144832126398947	108.7
+50.0	10.147695202257761	108.5
+75.0	10.15629413426231	108.2
+100.0	10.165865611158232	107.7
+125.0	10.178335535006605	107.2
+150.0	10.190836088804913	106.7
+175.0	10.202402345597276	106.2
+200.0	10.214962121212121	105.7
+225.0	10.23046282245827	105.3
+250.0	10.246010638297872	104.8
+275.0	10.257702548497528	104.3
+300.0	10.273333333333333	103.8
+350.0	10.30473824990447	102.8
+400.0	10.335345405767942	101.5
+450.0	10.366134922160292	100.3
+500.0	10.39710843373494	99.0
+550.0	10.42725954567424	97.8
+600.0	10.458599961217763	96.5
+650.0	10.494211499173073	95.3
+700.0	10.531094405935761	94.0
+750.0	10.569272976680384	93.2
+800.0	10.60355843900521	91.8

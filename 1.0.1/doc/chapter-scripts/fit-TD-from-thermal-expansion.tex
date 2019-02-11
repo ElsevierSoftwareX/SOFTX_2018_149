@@ -1,0 +1,12 @@
+% This is part of the cp-tools manual.
+% Copyright (C) 2018 Tilo Zienert
+% See the main file doc-cp-tools.tex for copying conditions.
+%
+\section{fit-TD-from-thermal-expansion.py}
+The script \emph{fit-TD-from-thermal expansion.py} determines the Debye temperature from a least-square fit of Garai's equation \cite{Garai2006} to (experimental) values of the thermal expansion coefficient.\\
+
+\textbf{CALL}: \emph{python scripts/fit-TD-from-thermal-expansion.py DATAFILE}\\
+
+The DATAFILE must contain tab-separated values of $T$ in K and $\alpha_V$ in \unitfrac{1e6}{K}. An example file can found in 'example-datafiles/data-Ag-alpha-Kirby1972.data' using the data for silver compiled by Kirby et al.~(1972) \cite{Kirby1972}.
+
+The script will ask for the highest temperature for fitting, which should be in the range of the calorimetric Debye temperature. After fitting, the script will print the Debye temperature and calculates for each given experimental value the estimated ones, which all are saved to a file named 'savefile-fit-te-\emph{DATAFILE}'.

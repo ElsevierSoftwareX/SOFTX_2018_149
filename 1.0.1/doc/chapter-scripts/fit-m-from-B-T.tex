@@ -1,0 +1,12 @@
+% This is part of the cp-tools manual.
+% Copyright (C) 2018 Tilo Zienert
+% See the main file doc-cp-tools.tex for copying conditions.
+%
+\section{fit-m-from-B-T.py}
+The script \emph{fit-m-from-B-T.py} calculates the linear slope $m$ of $B(T)$ from a a least-square fit of a linear equation to given (experimental) data above the transition temperature $T_B^\text{trans}$.\\
+
+\textbf{CALL}: \emph{python scripts/fit-m-from-B-T.py} DATAFILE\\
+
+The DATAFILE must contain tab separated values of $T$ in K and $B$ in GPa. An example datafile can be found in 'example-datafiles/data-Ag-11652-Wern2004.data' containing values for silver compiled by Wern (2004) \cite{Wern2004}.
+
+The script will ask for the Debye temperature, the volumetric thermal expansion coefficient at the Debye temperature, and the values of volume and the bulk modulus at $T=\unit[0]{K}$. Using the $c_p$-predicting algorithm, the script determines the bulk modulus transition temperature and uses then all $B(T)$ values above this temperature for obtaining $m$.

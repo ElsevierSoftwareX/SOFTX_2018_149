@@ -1,0 +1,38 @@
+#   Copyright 2017 Tilo Zienert
+#
+#   This file is part of cp-tools.
+#
+#   cp-tools is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   cp-tools is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with cp-tools.  If not, see <http://www.gnu.org/licenses/>.
+#
+###############
+#
+# data from Kirby1972
+#
+#T[K]	alpha_v[1e-6/K]
+25.0	7.199999999999999
+50.0	23.700000000000003
+75.0	36.900000000000006
+100.0	43.2
+150.0	50.099999999999994
+200.0	53.699999999999996
+250.0	55.800000000000004
+293.0	57.0
+350.0	58.5
+400.0	59.699999999999996
+500.0	62.099999999999994
+600.0	64.5
+700.0	67.19999999999999
+800.0	70.19999999999999
+1000.0	78.0
+1200.0	88.80000000000001

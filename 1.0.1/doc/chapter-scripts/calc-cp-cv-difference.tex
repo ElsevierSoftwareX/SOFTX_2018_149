@@ -1,0 +1,12 @@
+% This is part of the cp-tools manual.
+% Copyright (C) 2018 Tilo Zienert
+% See the main file doc-cp-tools.tex for copying conditions.
+%
+\section{calc-cp-cv-difference.py}
+The script \emph{calc-cp-cv-difference.py} calculates the difference between the $c_p$ of a material saved in \emph{DATAFILE} and the calculated $c_V$ for a given Debye temperature.\\
+
+\textbf{CALL}: \emph{python scripts/calc-cp-cv-difference.py DATAFILE}\\
+
+The DATAFILE must contain tab separated $T$-$c_p$ values. An example file can be found for silver in 'example-datafiles/data-Ag-cp-Furukawa1972.data' containing the values compiled by Furukawa et al.~(1972) \cite{Furukawa1972}.
+
+After calling, the script will ask for a Debye temperature in K and a filename to save the calculated values. In our example of silver, the calorimetric Debye temperature is \unit[215]{K}.

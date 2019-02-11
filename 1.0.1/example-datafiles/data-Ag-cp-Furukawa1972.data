@@ -1,0 +1,41 @@
+#   Copyright 2017 Tilo Zienert
+#
+#   This file is part of cp-tools.
+#
+#   cp-tools is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   cp-tools is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with cp-tools.  If not, see <http://www.gnu.org/licenses/>.
+#
+###############
+#
+# data from Furukawa1972
+#
+#T[K]	cp[J/K*mol]
+10.0	0.184096
+15.0	0.66944
+20.0	1.6484960000000002
+25.0	3.066872
+30.0	4.76976
+50.0	11.67336
+70.0	16.3176
+100.0	20.0832
+150.0	22.88648
+200.0	24.14168
+250.0	24.8948
+298.15	25.35504
+400.0	25.85712
+500.0	26.3592
+600.0	26.86128
+700.0	27.44704
+800.0	28.11648
+1000.0	29.9156
+1200.0	31.882080000000002
